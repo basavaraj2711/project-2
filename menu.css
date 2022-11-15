@@ -1,0 +1,279 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:#f6f9fe;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgba(53,50,82,255);
+  font-family: 'Fira Sans', sans-serif;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 5%;
+}
+ nav .logo{
+  width: 150px;
+
+  }
+  nav .logo a img{
+  width: 100%;
+  transition: .2s ease;
+  padding-top: 4px;
+ 
+  }
+  nav .logo a img:hover{
+  transform: scale(1.2);
+  }
+  input{
+    line-height: 3em;
+  }
+  input::placeholder {
+    font: 20px/3 sans-serif;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+nav ul li a{
+  color: #545454;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .navLinks button{
+ 
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+  font-weight: 700;
+  margin-left: 10px;
+  background-color: #372865;
+  margin-top: 0.1em;
+  margin-bottom: 10px;
+
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+
+}
+.btnn{
+  margin-top: 1px;
+}
+
+nav .menubtn{
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: none;
+}
+ 
+/* responsive navbar css */
+@media screen and (max-width: 600px) {
+  nav .menubtn{
+    display: flex;
+  }
+  nav .navLinks{
+    display: none;
+  }
+  .sideNav {
+    display: block !important;
+  }
+}
+ 
+.sideNav{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.3s ease-in;
+  padding-top: 60px;
+  display: none;
+}
+ 
+.sideNav a{
+  padding: 8px 8px 8px 40px;
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+  color: #353252;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.sideNav a button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  border-style: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.sideNav a:hover{
+  color: #372865;
+}
+.sideNav .closeBtn{
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+ 
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 8%;
+  
+}
+.row .column1 {
+  padding-right: 50px;
+}
+.column1 h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+.column1 p {
+  font-size: 20x;
+  margin-bottom: 10px;
+  color: #585858;
+line-height: 25px;
+}
+.social a{
+  border-radius:15px;
+  transition: 2s ease;
+  
+}
+.email{
+  border-radius: 5px;
+  align-items: center;
+}
+.early p{
+  background-color: #372865;
+  size: 20px;
+  color:#c5bbde;
+  border-radius: 20px;
+  line-height: 40px;
+  background-size: 100px;
+  width: fit-content   ;
+  margin-bottom: 0.9em;
+  margin-top: 0.9em;
+  padding:5px 15px ;
+ 
+
+}
+.early a{
+  color:#c5bbde;
+ 
+  
+}
+.column1 button {
+  width: 150px;
+  margin-top: 0.9em;
+  padding-top: 0.9rem;
+    padding-right: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 0.9rem;
+  border-radius: 5sspx;
+  border-style: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #372865;
+}
+.social h1{
+  font-size:15px;
+  margin-top: 60px;
+  color:#545454;
+}
+
+/* Header content responsive */
+@media screen and (max-width: 980px) {
+  .column2 img {
+    display: none;
+  }
+  
+  
+  .column1 h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .early p{
+    font-size: 13px;
+    text-align: center;
+padding: 0.9em 0.9em;
+line-height: 14px;
+
+  }
+  .kill p{
+    font-size: 13px;
+    font-display: 100px;
+    justify-content: center;
+padding: 0.9em 0.9em;
+text-align: center;
+color: #585858 ;
+line-height: 20px;
+
+
+  }
+  .tone button{
+    padding: 20px 20px;
+  }
+  .row {            
+    margin-top: 80px;
+  }
+  .button{
+    margin-top: 100px;
+    
+  }
+  .early{
+    margin-top: 0.5em;
+    padding: 5px 5px;
+  }
+  .column1 button{
+  padding-left: 10px;
+  
+
+  margin-right: 0 auto;
+  margin-left:0  auto;
+  }
+  
+ 
+}
+ 
+@media screen and (max-width: 600px) {
+ 
+  .column1 h1 {
+    font-size: 35px;
+  }
+  .row {
+    flex-direction: column;
+    margin-top: 0.5em;
+ 
+  }
+  .row .column1 {
+    padding: 30px;
+  }
+  
+}
+@media screen and (max-width: 980px){
+  .button{
+    margin-top: 100px;
+  }
+  
+}

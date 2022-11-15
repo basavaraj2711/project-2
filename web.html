@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menu.css">
+  <title>Product Landing Page</title>
+</head>
+<body>
+ <nav>
+  <div class="logo">
+    <a href="#"><img src="./Assets/Logo.svg"></a>
+    </div>
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
+       <li><a href="#">Features</a></li>
+       <li><a href="#">Affliates</a></li>
+       <li><a href="#"> <p>Pricing</p></a></li>
+       <li><a href="#">Comunitties</a></li>
+     <div class="btnn">
+         <button type="button">Join Waitlist</button>
+     </div>
+   
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a href="#">Features</a>
+     <a href="#">Affliates</a>
+     <a href="#">Pricing</a>
+     <a href="#">Comunitties</a>
+     
+     <div class="button">  
+         <a href="#"><button type="button">Join Waitlist</button> </a>
+    </div>
+
+     
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="row">  
+     <div class="column1" id="i">
+      <div class="early">
+        <p> We are now allowing early excess for users<span><a href="#"> Learn more</a></span></p>
+      </div>
+      <br>
+       <h1>Build a highly engaged</h1>
+       <h1>community with no effort</h1>
+       <div class="kill">
+       <p >Commune offers the tools you need to build a highly engaged community with little to no
+        effort. Simply setup your Commune workspace, and manage everything from members to
+      content from one central dashboard.</p>
+      
+        <input type="email" class="email" name="ef" size="50"  width="40"  placeholder="Enter your email here" >
+        
+        <button >Join waitlist</button>
+      </div>
+        <div class="social">
+            <h1>Used by these companies :</h1>
+            <a href="#"><img src="./Assets/Atlassian Icon.svg" width="50px"></a>
+            <a href="#"><img src="./Assets/Behance Icon.svg" width="50px"></a>
+            <a href="#"><img src="./Assets/Bing Icon.svg" width="50px"></a>
+            <a href="#"><img src="./Assets/Bitbucket Icon.svg" width="50px"></a>
+            <a href="#"><img src="./Assets/Dropbox Icon.svg" width="50px"></a>
+            <a href="#"><img src="./Assets/Twitter Icon.svg" width="50px"></a>
+        </div>
+     </div>
+     <div class="column2">
+       <img src="Illustration.png" alt="banner" width="400px">
+     </div>
+   </div>
+  
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+ 
+</body>
+</html>
